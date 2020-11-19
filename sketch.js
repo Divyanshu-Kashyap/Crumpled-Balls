@@ -62,12 +62,12 @@ function draw() {
 
   background("black");
   
-if(keyDown("up")){
-	Matter.Body.applyForce(paper.body, paper.body.position, {
-		x: 1,
-		y: -1.7
-	  });
-}
+//if(keyDown("up")){
+//	Matter.Body.applyForce(paper.body, paper.body.position, {
+	//	x: 1,
+	//	y: -1.7
+	//  });
+//}
 
   drawSprites();
  
@@ -79,4 +79,14 @@ text("Clean India,Green India!!!",300,100);
 }
 
 
+function keyPressed(){
+  if(keyCode===UP_ARROW){
 
+    Matter.Body.applyForce(paper.body, paper.body.position, {
+      x: 17,
+      y: -13
+      });
+
+
+  }
+}
